@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+ <main role="main" class="container">
+<br>
+{% if form.errors %}
+Неверное имя пользователя и пароль. Введите правильно
+
+{% else %}
+ Пожалуйста ввидете логин и пароль ниже в форму:
+{% endif %}
+
+<form action="." method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+
+    <p>
+        <input type="submit" value="Войти">
+    </p>
+</form>
+ </main>
+{% endblock %}

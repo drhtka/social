@@ -1,0 +1,33 @@
+# пользователь в админке django
+Username (leave blank to use 'ubuntu'):  social
+L: social
+Error: Enter a valid email address.
+Email address:  tinez99@ukr.net
+Pass: 0803795fijeK~
+
+
+adduser social
+pass:   social~root/QaZ
+# предоставление прав рута вводим пароль еще раз
+usermod -aG sudo social 
+# предоставление прав рута вводим пароль еще раз
+
+# настройка и установка ssh
+apt-get install ssh
+# При установке SSH-сервер автоматически прописывается в автозагрузку. Управлять его запуском, остановкой или перезапуском можно с помощью команд:
+/etc/ssh/sshd_config
+
+sudo service ssh stop|start|restart
+# Отключить root-доступ можно так:
+PermitRootLogin no
+#Если по каким либо причинам вам все таки хочется использовать парольную аутентификацию —
+#позаботьтесь о том, чтобы никто не мог авторизоваться с пустым паролем.
+#Для этого задайте директиву
+PermitEmptyPasswords no
+
+Port 2202
+#AddressFamily any
+#ListenAddress 192.168.181.1
+#ListenAddress ::
+PermitRootLogin no
+/etc/ssh/sshd_config
