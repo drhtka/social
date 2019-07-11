@@ -5,7 +5,7 @@ Error: Enter a valid email address.
 Email address:  tinez99@ukr.net
 Pass: 0803795fijeK~
 
-
+111
 adduser social
 pass:   social~root/QaZ
 # предоставление прав рута вводим пароль еще раз
