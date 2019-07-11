@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49d68845-478b-4944-a9a9-c7d3976312e9" name="Default Changelist" comment="" />
+    <list default="true" id="49d68845-478b-4944-a9a9-c7d3976312e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9354f446-7686-4cf3-abaf-8c97afe83cf2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ex.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/social.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="deploy/help.txt" />
-    <ignored path="deploy/" />
-    <ignored path="social/settings.py" />
-    <ignored path="../.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +52,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/social/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/social_content/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="336">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
               </folding>
@@ -77,15 +93,6 @@
                 <element signature="e#24#653#1" />
                 <element signature="e#654#686#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/social/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -162,17 +169,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="start_Summernote" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/deploy/upps.conf" />
         <option value="$PROJECT_DIR$/deploy/upps.wsgi" />
+        <option value="$PROJECT_DIR$/deploy/help.txt" />
         <option value="$PROJECT_DIR$/../virtualenv/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py" />
         <option value="$PROJECT_DIR$/account/admin.py" />
         <option value="$PROJECT_DIR$/account/apps.py" />
@@ -181,6 +184,7 @@
         <option value="$PROJECT_DIR$/account/migrations/forms.py" />
         <option value="$PROJECT_DIR$/account/forms.py" />
         <option value="$PROJECT_DIR$/account/urls.py" />
+        <option value="$PROJECT_DIR$/social/urls.py" />
         <option value="$PROJECT_DIR$/index/views.py" />
         <option value="$PROJECT_DIR$/account/views.py" />
         <option value="$PROJECT_DIR$/account/templates/account/dashboard.html" />
@@ -189,14 +193,12 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/account/templates/account/login.html" />
         <option value="$PROJECT_DIR$/templates/base_content.html" />
+        <option value="$PROJECT_DIR$/social/settings.py" />
         <option value="$PROJECT_DIR$/social_content/views.py" />
         <option value="$PROJECT_DIR$/social_content/tests.py" />
         <option value="$PROJECT_DIR$/social_content/apps.py" />
-        <option value="$PROJECT_DIR$/social_content/models.py" />
-        <option value="$PROJECT_DIR$/social/urls.py" />
         <option value="$PROJECT_DIR$/social_content/admin.py" />
-        <option value="$PROJECT_DIR$/deploy/help.txt" />
-        <option value="$PROJECT_DIR$/social/settings.py" />
+        <option value="$PROJECT_DIR$/social_content/models.py" />
       </list>
     </option>
   </component>
@@ -206,6 +208,13 @@
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
@@ -219,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,17 +242,13 @@
             </path>
             <path>
               <item name="social" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,10 +256,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -333,16 +337,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Django server.social" />
       <item itemvalue="JavaScript Debug.base.html" />
       <item itemvalue="Python.views" />
-      <item itemvalue="Django server.social" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.views" />
         <item itemvalue="JavaScript Debug.base.html" />
-        <item itemvalue="JavaScript Debug.base.html" />
-        <item itemvalue="Python.views" />
         <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
@@ -380,35 +381,12 @@
       <workItem from="1562614667870" duration="1998000" />
       <workItem from="1562682533855" duration="10941000" />
       <workItem from="1562849980049" duration="1289000" />
-      <workItem from="1562851733390" duration="2019000" />
-      <workItem from="1562853813110" duration="2449000" />
+      <workItem from="1562851733390" duration="220000" />
     </task>
-    <task id="LOCAL-00001" summary="project_social">
-      <created>1562852176896</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1562852176898</updated>
-    </task>
-    <task id="LOCAL-00002" summary="project_social_2">
-      <created>1562854362972</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1562854362972</updated>
-    </task>
-    <task id="LOCAL-00003" summary="setup_wysiwyg">
-      <created>1562873757203</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1562873757203</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84966000" />
+    <option name="totallyTimeSpent" value="75831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,23 +400,23 @@
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1756" height="904" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49612403" visible="true" weight="0.13450292" />
-      <window_info id="Favorites" order="1" sideWeight="0.503876" side_tool="true" weight="0.16959064" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989899" visible="true" weight="0.16959064" />
+      <window_info id="Favorites" order="1" sideWeight="0.5010101" side_tool="true" weight="0.21552724" />
       <window_info id="Structure" order="2" sideWeight="0.4989899" weight="0.21552724" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994206" weight="0.41333333" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994206" weight="0.08643617" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.16090426" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933334" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936507" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49941522" visible="true" weight="0.46933332" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.26266667" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5005848" side_tool="true" visible="true" weight="0.46933332" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50057936" side_tool="true" weight="0.55936676" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.069920845" />
       <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="bottom" id="manage.py@social" order="13" sideWeight="0.4994206" weight="0.39466667" />
+      <window_info active="true" anchor="bottom" id="manage.py@social" order="13" sideWeight="0.4994206" visible="true" weight="0.3882979" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3298153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -502,31 +480,12 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="project_social" />
-    <MESSAGE value="project_social_2" />
-    <MESSAGE value="setup_wysiwyg" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup_wysiwyg" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/social$views.coverage" NAME="views Coverage Results" MODIFIED="1562339256758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/account" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/deploy/upps.conf" />
     <entry file="file://$PROJECT_DIR$/social/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -553,6 +512,13 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0f42607-f459-4dd6-bc7a-cde2e3cf2e5f/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/upps.wsgi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -606,6 +572,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/help.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -654,45 +627,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_git.txt" />
-    <entry file="file://$PROJECT_DIR$/deploy/help.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/upps.wsgi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/upps.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/social_content/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#56#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social_content/models.py">
+    <entry file="file://$PROJECT_DIR$/social/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#24#52#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -702,6 +647,17 @@
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#25#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#24#653#1" />
+            <element signature="e#654#686#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -754,21 +710,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social/urls.py">
+    <entry file="file://$PROJECT_DIR$/social_content/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="336">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#24#653#1" />
-            <element signature="e#654#686#0" expanded="true" />
+            <element signature="e#24#52#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/social/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
         </state>
       </provider>
     </entry>
