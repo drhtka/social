@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'account',
     'index',
     'social_content',
+    'pytils',
 ]
 
 SITE_ID = 1
@@ -175,3 +176,6 @@ from django.urls import reverse_lazy
 LOGIN_REDIRECT_URL = reverse_lazy('dasboard')
 LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
+
+# может быть ошибка
+AUTH_USER_MODEL = 'auth.User'
