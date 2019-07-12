@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'index',
     'social_content',
     'pytils',
+    'django_summernote',
 ]
 
 SITE_ID = 1
