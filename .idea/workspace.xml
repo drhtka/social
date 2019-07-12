@@ -341,9 +341,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django server.social" />
       <item itemvalue="JavaScript Debug.base.html" />
       <item itemvalue="Python.views" />
+      <item itemvalue="Django server.social" />
     </list>
     <recent_temporary>
       <list>
