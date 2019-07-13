@@ -22,4 +22,4 @@ class Content(models.Model):
             super(Content, self).save(*args, **kwargs)
 
     def __str__(self):
-        return set.title
+        return self.title
