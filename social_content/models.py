@@ -2,6 +2,7 @@
 from django.db import models
 from django.conf import settings
 #from django.utils.text import slugify
+from django.urls import reverse
 from pytils.translit import slugify
 
 
@@ -20,6 +21,10 @@ class Content(models.Model):
             self.slug = slugify(self.title)#чем заполнить, заголовком
             #super(Content, self).save(*args, **kwargs)#модель Content считается родителем, сохранить любые аргументы
             super(Content, self).save(*args, **kwargs)
+
+    def get_absolute_url(self): # стандартная функция мы ее переопределяем
+        return reverse('social_content:detail', kwargs={'id':self.id, 'slug':self.slug},)# social_content нэймспэйс в главном урл, detail  функция в представлении для детального просмотра
+    # kwargs извлекать запись по id, ключ обратиться к id записи; 'slug'обратитьс к этим данным self.slug
 
     def __str__(self):
         return self.title

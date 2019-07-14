@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'social_content',
     'pytils',
     'django_summernote',
+    'crispy_forms',
+    'sorl.thumbnail',
 ]
 
 SITE_ID = 1
@@ -69,6 +71,7 @@ TEMPLATES = [
                 os.path.join(BASE_DIR, 'templates'),
                 os.path.join(BASE_DIR, 'account/templates'),
                 os.path.join(BASE_DIR, 'index/templates'),
+                os.path.join(BASE_DIR, 'social_content/templates'),
                 ]
         ,
         'APP_DIRS': True,

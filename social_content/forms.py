@@ -11,6 +11,6 @@ class ContentCreateForm(forms.ModelForm):
 class DeleteContentForms(forms.ModelForm):
     class Meta:
         model = Content
-        fields: []
+        fields = []
 
 
