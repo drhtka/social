@@ -6,7 +6,7 @@ app_name = 'social_content'
 
 urlpatterns = [
     url(r'^create/$', views.content_create, name='create'),
-    #url(r'^detali/(?<id>\d+)/(?P<slug>)[-\w]+/$', views.content_detali, name='detali'),
+    url(r'^detail/(?P<id>\d+)/(?P<slug>[-\w]+)/$', views.content_detail, name='detail'),
 ]
 
 
