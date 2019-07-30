@@ -113,8 +113,9 @@ DATABASES = {
         'USER': 'phpmyadmin',
         'PASSWORD': '5fijek080379~',
         'HOST': '',
-# 'HOST': 'localhost',
+#        'HOST': 'localhost',
         'PORT': '',
+#        'PORT': '3306',
 # вход в phpmyadmin danka
     }
 }

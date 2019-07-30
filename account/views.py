@@ -2,10 +2,13 @@
 from django.contrib import auth
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
+from django.template import RequestContext
+from django.core.exceptions import ObjectDoesNotExist
 from account.forms import LoginForm
-# Create your views here.
+from account.models import Profile
 
 
 def user_login(request):
@@ -37,7 +40,20 @@ def user_logout(request):
 
 @login_required#чтобы могли входить только авторизовааннрые пользователи
 def dashboard(request):
-    return render(request, "account/dashboard.html", {'username': auth.get_user(request).username}) #  будет отображать вошел пользователь или не вошел
+    context = RequestContext(request)
+    to = User.objects.get(username=request.user)
+    try:
+        profile = Profile.objects.get(user=to)
+    except ObjectDoesNotExist:
+        profile=None
+    return render(request, "account/dashboard.html", {'username': auth.get_user(request).username, #  будет отображать вошел пользователь или не вошел
+                                                      'to':to,
+                                                      'profile':profile,
+                                                      'user':request.user.get_full_name,
+                                                      'last_name':request.user.last_name,
+                                                      'first_name':request.user.first_name,
+                                                      'ip_address':request.META['REMOTE_ADDR']
+                                                      })
 
 
 
