@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49d68845-478b-4944-a9a9-c7d3976312e9" name="Default Changelist" comment="end_step11">
+    <list default="true" id="49d68845-478b-4944-a9a9-c7d3976312e9" name="Default Changelist" comment="end_step13">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist/shelved.patch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/dashboard.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +31,16 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="social@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="sociall@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sociall@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -54,7 +62,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step_12" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,8 +75,11 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1OYZngGwGPUbTUxz2ZRYl5zvKk0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -146,7 +157,7 @@
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/account/dashboard/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -167,6 +178,21 @@
         <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@35b68555" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\ex\AppData\Roaming\Subversion</configuration>
@@ -209,7 +235,12 @@
       <workItem from="1563812580017" duration="5518000" />
       <workItem from="1563909051771" duration="1534000" />
       <workItem from="1564156682834" duration="82000" />
-      <workItem from="1564331177055" duration="613000" />
+      <workItem from="1564331177055" duration="12799000" />
+      <workItem from="1564422826989" duration="76000" />
+      <workItem from="1564422988103" duration="3855000" />
+      <workItem from="1564484336514" duration="1492000" />
+      <workItem from="1564492408215" duration="3930000" />
+      <workItem from="1564586642676" duration="4698000" />
     </task>
     <task id="LOCAL-00001" summary="project_social">
       <created>1562852176896</created>
@@ -260,7 +291,42 @@
       <option name="project" value="LOCAL" />
       <updated>1563821311421</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="end_step12">
+      <created>1564332529570</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564332529570</updated>
+    </task>
+    <task id="LOCAL-00009" summary="start_step13">
+      <created>1564341255187</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564341255187</updated>
+    </task>
+    <task id="LOCAL-00010" summary="end_step13">
+      <created>1564508524561</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564508524561</updated>
+    </task>
+    <task id="LOCAL-00011" summary="end_step13">
+      <created>1564508742781</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564508742781</updated>
+    </task>
+    <task id="LOCAL-00012" summary="end_dz12">
+      <created>1564588260641</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1564588260641</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -303,6 +369,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="project_social" />
     <MESSAGE value="project_social_2" />
     <MESSAGE value="star_step9" />
@@ -310,7 +377,10 @@
     <MESSAGE value="end_step_11_master" />
     <MESSAGE value="start_step12" />
     <MESSAGE value="end_step12" />
-    <option name="LAST_COMMIT_MESSAGE" value="end_step12" />
+    <MESSAGE value="start_step13" />
+    <MESSAGE value="end_step13" />
+    <MESSAGE value="end_dz12" />
+    <option name="LAST_COMMIT_MESSAGE" value="end_dz12" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/social$views.coverage" NAME="views Coverage Results" MODIFIED="1562339256758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/account" />
