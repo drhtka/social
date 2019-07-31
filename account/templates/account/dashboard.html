@@ -11,5 +11,6 @@
 	<a href="{{ profile.photo.url }}">
 	<img src="{{ im.url }}" class="image-detail">
 	</a>
+        {% empty %}    <p>No image</p>
 {% endthumbnail %}
 {% endblock %}
