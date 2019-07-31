@@ -8,7 +8,10 @@ from account import views
 
 urlpatterns = [
     #url(r'^account/', include("account.urls")),
-    url(r'^login/$', views.user_login, name='login'),
-    url(r'^logout/$', views.user_logout, name='logout'),
+
+    #url(r'^login/$', views.user_login, name='login'),
+    #url(r'^logout/$', views.user_logout, name='logout'),
+    re_path(r'^login/$', views.user_login, name='login'),
+    re_path(r'^logout/$', views.user_logout, name='logout'),
     re_path(r'^dashboard/$', views.dashboard, name='dashboard'),
 ]
