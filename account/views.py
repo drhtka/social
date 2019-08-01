@@ -11,7 +11,6 @@ from django.template import RequestContext
 from django.core.exceptions import ObjectDoesNotExist
 from account.forms import LoginForm
 from account.forms import UserEditForm, ProfileEditForm
-
 from account.models import Profile
 
 
