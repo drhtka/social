@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
+
+    <br><br>
+{% if request.user.is_authenticzted %}
+    <a href="{% url 'images:create' %}">Создать</a>
+{% endif %}
+<br>
+    {% if content_detail.user == request.user or request.user.is_superuser %}
+            <a href="{% url 'images:create' %}">Создать</a><br>
+   <a href="{% url 'images:iii' slug=content_detail.slug id=content_detail.id %}">Редактировать</a>
+
+    {% endif %}
 <main role="main" class="container">
     <!-- Контент -->
     <h1>{{ content_detail.title }}</h1>

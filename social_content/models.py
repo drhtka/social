@@ -23,7 +23,7 @@ class Content(models.Model):
             super(Content, self).save(*args, **kwargs)
 
     def get_absolute_url(self): # стандартная функция мы ее переопределяем
-        return reverse('social_content:detail', kwargs={'id':self.id, 'slug':self.slug},)# social_content нэймспэйс в главном урл, detail  функция в представлении для детального просмотра
+        return reverse('images:detail', kwargs={'id':self.id, 'slug':self.slug},)# social_content нэймспэйс в главном урл, detail  функция в представлении для детального просмотра
     # kwargs извлекать запись по id, ключ обратиться к id записи; 'slug'обратитьс к этим данным self.slug
 
     def __str__(self):

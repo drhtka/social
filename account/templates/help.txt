@@ -1,0 +1,16 @@
+
+@login_required
+def content_create(request, id, slug):
+    new_content = get_object_or_404(Content, id=id, slug=slug)
+    if request.method == 'POST':
+        form = ContentCreateForm(instance=new_content, data=request.POST, files=request.FILES)
+
+        if form.is_valid():
+            new_content = form.save(commit=False)
+            new_content.user = request.user
+            new_content.save()
+            return redirect(new_content.get_absolute_url())
+    else:# показать форму
+        form = ContentCreateForm(instance=new_content)
+    context = {'form':form, 'create':False}
+    return render(request, 'contents/content/create.html', {'form':form}, context) # где форму показать, вернуть на какой странице эт овсе проделать

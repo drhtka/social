@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'sorl.thumbnail',
+    'debug_toolbar',
 ]
 
 SITE_ID = 1
@@ -60,8 +61,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
+INTERNAL_IP = ['127.0.0.1']
 ROOT_URLCONF = 'social.urls'
 
 TEMPLATES = [

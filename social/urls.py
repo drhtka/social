@@ -21,12 +21,24 @@ from index import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+#from django.conf import settings
+#app_name = "images"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^account/', include("account.urls")),
     re_path('^$', views.index),
-    path('news/', include('social_content.urls', namespace='social_content')),
+    #path('news/', include('social_content.urls', namespace='social_content')),]
+    path('news/', include('social_content.urls', namespace='images')),
     path('summernote/', include('django_summernote.urls')),
+
+
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+] + urlpatterns

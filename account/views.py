@@ -32,7 +32,6 @@ def user_login(request):
 
             else: # если вообще все пошло не так
                 return HttpResponse('Invalid login and password')
-
     else:
         form = LoginForm()
     return render(request, "account/login.html", {'form': form, 'username': auth.get_user(request).username}) #  будет отображать вошел пользователь или не вошел
@@ -71,7 +70,7 @@ def edit_profile(request):
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
-            messages.success(request, 'Профиль успешно обнавлен!.')
+            messages.success(request, 'Профиль успешно обновлен!.')
             return redirect('dashboard')
         else:
             messages.error(request,'Ой! Ошибка при обновлении профиля. Попробуйте снова.')
