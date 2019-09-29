@@ -15,4 +15,7 @@ urlpatterns = [
     re_path(r'^logout/$', views.user_logout, name='logout'),
     re_path(r'^dashboard/$', views.dashboard, name='dashboard'),
     path('edit/', views.edit_profile, name='edit'),
+    path('users/', views.user_list, name='user_list'),
+    path('users/follow/', views.user_follow, name='user_follow'),
+    re_path(r'users/(?P<username>[-\w]+)/$', views.user_detail, name='user_detail'),
 ]
