@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <main role="main" class="container">
+    <!--Контент -->
+    <form action="." method="post">
+        {% csrf_token %}
+        <h3>Вы уверены что хотите удалить запись</h3>
+        <input type="submit" class="button" value="Подтвердить">
+    </form>
+    <!-- End Контент -->
+
+
+    </main>
+{% endblock %}

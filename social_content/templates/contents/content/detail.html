@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block content %}
 
     <br><br>
@@ -8,7 +9,8 @@
 <br>
     {% if content_detail.user == request.user or request.user.is_superuser %}
             <a href="{% url 'images:create' %}">Создать</a><br>
-   <a href="{% url 'images:iii' slug=content_detail.slug id=content_detail.id %}">Редактировать</a>
+   <a href="{% url 'images:iii' slug=content_detail.slug id=content_detail.id %}">Редактировать</a><br>
+   <a href="{% url 'images:delete_content' slug=content_detail.slug id=content_detail.id %}">Удалить</a>
 
     {% endif %}
 <main role="main" class="container">
@@ -26,8 +28,73 @@
 
     {% endthumbnail %}
     <br><br>
-
+ <!-- статья -->
     {{ content_detail.entry|safe }}
+
+
+{% with total_likes=content_detail.users_like.count users_like=content_detail.users_like.all %}
+ <div class="image-info">
+                <div>
+
+
+<br><hr>
+
+
+ <!-- End количество просмотров -->
+
+
+ <!-- likes-->
+  <span class="count">
+ <span class="total">{{ total_likes }}</span>
+like{{ total_likes|pluralize }}
+ </span>
+ <!--End  likes-->
+
+{% if request.user.is_authenticated %}
+
+
+                    <a href="#" data-id="{{ content_detail.id }}" data-action="{% if request.user in users_like %}un{% endif %}like" class="like button">
+                        {% if request.user not in users_like %}
+                            <b>Нравится</b>
+                        {% else %}
+                            <b>Не нравится</b>
+                        {% endif %}
+                    </a>
+                </div>
+
+        </div>
+
+
+{% else %}
+    <br><br>
+    {{ content_detail.entry|safe}}
+
+
+ {% endif %}
+<br><br>
+
+
+        <div class="image-likes">
+            {% for user in content_detail.users_like.all %}
+                <div>
+                {% if user.profile.photo %}
+                   <img src="{{ user.profile.photo.url }}" width="60px" height="60px">
+                    {% else %}
+                    <img src="{% static "no_image_app_content.jpg" %}"  width="60px" height="60px">
+                {% endif %}
+                    <p>{{ user.first_name }}</p>
+                </div>
+            {% empty %}
+                Пока нет лайков. Оцените первым.
+            {% endfor %}
+        </div>
+    {% endwith %}
+
     <!-- end Контент -->
 </main>
+{% endblock %}
+
+
+{% block ajax_and_jquery %}
+<!--Функция JQuery -->
 {% endblock %}

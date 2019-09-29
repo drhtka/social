@@ -72,6 +72,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
                 os.path.join(BASE_DIR, 'templates'),
+
+
                 os.path.join(BASE_DIR, 'account/templates'),
                 os.path.join(BASE_DIR, 'index/templates'),
                 os.path.join(BASE_DIR, 'social_content/templates'),
@@ -170,10 +172,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "other_project_static")  # какие еще папки будут в статике
 ]
 
-FIXTURE_DIRS = [
-    (BASE_DIR, "social_content/fixtures"), # json
-]
-
 STATICFILES_FINDERS = (
 
 
@@ -191,7 +189,3 @@ LOGOUT_URL = reverse_lazy('logout')
 
 # может быть ошибка
 AUTH_USER_MODEL = 'auth.User'
-
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
-REDIS_DB = 0
