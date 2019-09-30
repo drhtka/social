@@ -5,12 +5,13 @@ from pyexpat import model
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponseRedirect, JsonResponse
+from django.http import HttpResponseRedirect, JsonResponse, HttpResponse
 # Create your views here.
 from social_content.forms import ContentCreateForm, DeleteContentForms
 from social_content.models import Content
 #instance=request.content,
 from my_decorators.decorator_ajax import ajax_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 @login_required
 def content_create(request):
@@ -112,3 +113,20 @@ def content_like(request):
              pass
     return JsonResponse({'status':'ko'})
 
+def content_list(request):
+    images =Content.objects.all()
+    paginator = Paginator(images, 8)
+    page = request.GET.get('page')
+    try:
+        images = paginator.page(page)
+    except PageNotAnInteger:
+        images = paginator.page(1)
+    except EmptyPage:
+        if request.is_ajax():
+            return HttpResponse('')
+        images = paginator.page(paginator.num_pages)
+    if request.is_ajax():
+        return render(request,
+                      'contents/content/list_ajax.html',
+                      {'sections':images, 'images': images})
+    return render(request, 'contents/content/list.html', {'sections':images, 'images': images})

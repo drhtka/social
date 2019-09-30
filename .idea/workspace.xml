@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d68845-478b-4944-a9a9-c7d3976312e9" name="Default Changelist" comment="end_step13">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist/shelved.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/12/45/124568e39ef4467b5ac3168fbc17c5dc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/78/25/7825168676b5ef5db2411192d14e0f51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/93/73/9373153f746966cfd24898997b727643.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/95/7b/957bb903bcae50f25025113b993c05d6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/bc/89/bc89295d94408dcd4c0acd61c7bc7999.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/eb/6c/eb6c8db5cec6c9aaad49d30b517f91e4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/f0/15/f015078a67abcb5463bd3cd847b9e453.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_content/templates/contents/content/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_content/templates/contents/content/list_ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9354f446-7686-4cf3-abaf-8c97afe83cf2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9354f446-7686-4cf3-abaf-8c97afe83cf2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/social.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/social.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social_content/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/social_content/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social_content/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/social_content/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,15 +65,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="jupyter" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,6 +95,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -98,6 +114,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/social_content/templates/contents/content" />
       <recent name="$PROJECT_DIR$/other_project_static/all_other_static" />
       <recent name="$PROJECT_DIR$/account" />
     </key>
@@ -116,6 +133,28 @@
   </component>
   <component name="RunManager" selected="Django server.social">
     <configuration name="base.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/social/templates/base.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="views (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="social" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/social_content" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/social_content/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -148,7 +187,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="social.settings" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../virtualenv/venv/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../virtualenv/social/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -168,14 +207,15 @@
       <item itemvalue="Django server.social" />
       <item itemvalue="JavaScript Debug.base.html" />
       <item itemvalue="Python.views" />
+      <item itemvalue="Python.views (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.views (1)" />
         <item itemvalue="Python.views" />
         <item itemvalue="JavaScript Debug.base.html" />
         <item itemvalue="Python.views" />
         <item itemvalue="JavaScript Debug.base.html" />
-        <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +280,42 @@
       <workItem from="1564422988103" duration="3855000" />
       <workItem from="1564484336514" duration="1492000" />
       <workItem from="1564492408215" duration="3930000" />
-      <workItem from="1564586642676" duration="4698000" />
+      <workItem from="1564586642676" duration="4949000" />
+      <workItem from="1564670012582" duration="12218000" />
+      <workItem from="1564753637685" duration="4106000" />
+      <workItem from="1564771478274" duration="1620000" />
+      <workItem from="1564842299887" duration="15290000" />
+      <workItem from="1564926157727" duration="5805000" />
+      <workItem from="1565014214944" duration="7876000" />
+      <workItem from="1565288804854" duration="3092000" />
+      <workItem from="1565292446335" duration="24560000" />
+      <workItem from="1565806808194" duration="839000" />
+      <workItem from="1565889306218" duration="11978000" />
+      <workItem from="1566026370284" duration="1071000" />
+      <workItem from="1566027520190" duration="418000" />
+      <workItem from="1566027999870" duration="1208000" />
+      <workItem from="1566057198448" duration="1229000" />
+      <workItem from="1567084338494" duration="77000" />
+      <workItem from="1567084462429" duration="6300000" />
+      <workItem from="1567451075484" duration="19533000" />
+      <workItem from="1567851965907" duration="1400000" />
+      <workItem from="1567862475440" duration="1225000" />
+      <workItem from="1567869764834" duration="121000" />
+      <workItem from="1567956105835" duration="13350000" />
+      <workItem from="1568142339696" duration="2734000" />
+      <workItem from="1568230145192" duration="1831000" />
+      <workItem from="1568378509010" duration="842000" />
+      <workItem from="1568380406183" duration="118000" />
+      <workItem from="1568382795180" duration="1465000" />
+      <workItem from="1568654565051" duration="12264000" />
+      <workItem from="1568746603629" duration="254000" />
+      <workItem from="1569091490345" duration="7699000" />
+      <workItem from="1569411017691" duration="3268000" />
+      <workItem from="1569501569821" duration="6208000" />
+      <workItem from="1569596546697" duration="19000" />
+      <workItem from="1569598041147" duration="16895000" />
+      <workItem from="1569868520550" duration="1023000" />
+      <workItem from="1569869687334" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="project_social">
       <created>1562852176896</created>
@@ -326,17 +401,57 @@
       <option name="project" value="LOCAL" />
       <updated>1564588260641</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="end_dz_step13">
+      <created>1564598596663</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1564598596663</updated>
+    </task>
+    <task id="LOCAL-00014" summary="start_step14">
+      <created>1564598726456</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1564598726456</updated>
+    </task>
+    <task id="LOCAL-00015" summary="end_step14 но форма не заработала, не обнавляется">
+      <created>1564686924670</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1564686924670</updated>
+    </task>
+    <task id="LOCAL-00016" summary="end_step14 все получилось">
+      <created>1564688108073</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564688108073</updated>
+    </task>
+    <task id="LOCAL-00017" summary="end_step14">
+      <created>1567956860725</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1567956860726</updated>
+    </task>
+    <task id="LOCAL-00018" summary="end_step23">
+      <created>1569755835706</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1569755835706</updated>
+    </task>
+    <task id="LOCAL-00019" summary="end_step27">
+      <created>1569782307549</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1569782307549</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -380,10 +495,18 @@
     <MESSAGE value="start_step13" />
     <MESSAGE value="end_step13" />
     <MESSAGE value="end_dz12" />
-    <option name="LAST_COMMIT_MESSAGE" value="end_dz12" />
+    <MESSAGE value="end_dz_step13" />
+    <MESSAGE value="start_step14" />
+    <MESSAGE value="end_step14 но форма не заработала, не обнавляется" />
+    <MESSAGE value="end_step14 все получилось" />
+    <MESSAGE value="end_step14" />
+    <MESSAGE value="end_step23" />
+    <MESSAGE value="end_step27" />
+    <option name="LAST_COMMIT_MESSAGE" value="end_step27" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/social$views.coverage" NAME="views Coverage Results" MODIFIED="1562339256758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/account" />
+    <SUITE FILE_PATH="coverage/social$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1565022009642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/social_content" />
   </component>
   <component name="masterDetails">
     <states>
