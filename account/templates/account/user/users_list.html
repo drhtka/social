@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block title %}Участники{% endblock %}
+{% block content %}
+<main role="main" class="container">
+<!--Контент -->
+    <h1>Участники2 </h1>
+    <div id="people-list">
+        {% for user in users %}
+            <div class="user">
+                <a href="{{ user.get_absolute_url }}">
+                {% if user.profile.photo %}<!-- если нет фото-->
+                {% thumbnail user.profile.photo "80x80" crop="100%" as im  %}
+                    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+                {% endthumbnail %}
+<!--то загрузить статическую картинку по умолчанию -->
+                {% else %} <img src="{% static "no_image_app_content.jpg" %}"  title="{{ username }}" alt="{{ username }}" width="80px" height="80px">
+                {% endif %}
+                </a>
+            <div class="info">
+        <a href="{{ user.get_absolute_url }}" class="title">{{ user.get_full_name }}</a>
+            </div>
+<br><br>
+    </div>
+        {% endfor %}
+</div>
+<!-- End Контент -->
+
+</main>
+{% endblock %}

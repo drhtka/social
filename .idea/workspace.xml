@@ -2,24 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d68845-478b-4944-a9a9-c7d3976312e9" name="Default Changelist" comment="end_step13">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/templates/account/tupe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/templates/actions/action/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities/views.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/cache/12/45/124568e39ef4467b5ac3168fbc17c5dc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/15/0e/150e2193ab6d947914f093a6193f8a18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/41/01/41019883780646782c7ab12c7088b77c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/63/46/6346cf497b99be0b69ffc9c33f95ad1c.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/cache/78/25/7825168676b5ef5db2411192d14e0f51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/84/3e/843e07d00f9370b180a2bd0e2f95cea4.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/cache/93/73/9373153f746966cfd24898997b727643.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/cache/95/7b/957bb903bcae50f25025113b993c05d6.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/cache/bc/89/bc89295d94408dcd4c0acd61c7bc7999.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/d6/7c/d67c2ed642fd6d5b2237d6b05156e18e.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/cache/eb/6c/eb6c8db5cec6c9aaad49d30b517f91e4.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/cache/f0/15/f015078a67abcb5463bd3cd847b9e453.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/social_content/templates/contents/content/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/social_content/templates/contents/content/list_ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cache/f0/88/f0881fe5c940a0993fefe5368d0227fa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_no.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9354f446-7686-4cf3-abaf-8c97afe83cf2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9354f446-7686-4cf3-abaf-8c97afe83cf2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/social.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/social.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/social_content/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/social_content/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/user/detail_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/user/detail_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/user/users_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/user/users_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/social/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social_content/templates/contents/content/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/social_content/templates/contents/content/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social_content/templates/contents/content/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/social_content/templates/contents/content/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social_content/templates/contents/content/list_ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/social_content/templates/contents/content/list_ajax.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/social_content/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/social_content/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_content.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +220,7 @@
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://127.0.0.1:8000/account/dashboard/" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/news/list" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -315,7 +339,8 @@
       <workItem from="1569596546697" duration="19000" />
       <workItem from="1569598041147" duration="16895000" />
       <workItem from="1569868520550" duration="1023000" />
-      <workItem from="1569869687334" duration="2875000" />
+      <workItem from="1569869687334" duration="28377000" />
+      <workItem from="1570196876218" duration="10273000" />
     </task>
     <task id="LOCAL-00001" summary="project_social">
       <created>1562852176896</created>
@@ -450,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569782307549</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="end_step27">
+      <created>1569872699302</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1569872699302</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

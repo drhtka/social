@@ -75,6 +75,7 @@ TEMPLATES = [
                 os.path.join(BASE_DIR, 'account/templates'),
                 os.path.join(BASE_DIR, 'index/templates'),
                 os.path.join(BASE_DIR, 'social_content/templates'),
+                os.path.join(BASE_DIR, 'activities/templates'),
                 ]
         ,
         'APP_DIRS': True,
@@ -183,6 +184,10 @@ STATICFILES_FINDERS = (
 
 )
 from django.urls import reverse_lazy
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
 
 # старый путь -from django.core.urlresolvers import reverse_lazy
 LOGIN_REDIRECT_URL = reverse_lazy('dasboard')

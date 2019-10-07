@@ -12,7 +12,7 @@ from social_content.models import Content
 #instance=request.content,
 from my_decorators.decorator_ajax import ajax_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
+from activities.utils import create_action
 @login_required
 def content_create(request):
 
@@ -23,6 +23,7 @@ def content_create(request):
             new_content = form.save(commit=False)
             new_content.user = request.user
             new_content.save()
+            create_action(request.user, 'content create', new_content)
             return redirect(new_content.get_absolute_url())
     else:
         form = ContentCreateForm(request.POST, request.FILES)# показать форму
@@ -105,6 +106,7 @@ def content_like(request):
             content = Content.objects.get(id=content_id)
             if action == 'like':
                 content.users_like.add(request.user)
+                create_action(request.user, 'likes', content)
 
             else:
                 content.users_like.remove(request.user)
@@ -114,8 +116,8 @@ def content_like(request):
     return JsonResponse({'status':'ko'})
 
 def content_list(request):
-    images =Content.objects.all()
-    paginator = Paginator(images, 8)
+    images =Content.objects.get_queryset().order_by('id')
+    paginator = Paginator(images, 2)
     page = request.GET.get('page')
     try:
         images = paginator.page(page)

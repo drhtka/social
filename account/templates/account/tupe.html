@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Лента{% endblock %}
+{% block content %}
+<main role="main" class="container">
+<h1>Лента активности участников</h1>
+<!--Контент -->
+<!-- End Контент -->
+<h2>Что происходит (выводит 100 последних событий):</h2>
+<br> <br>
+{% for action in actions %}
+{% include "actions/action/detail.html" %}
+{% endfor %}
+<br> <br>
+</main>
+{% endblock %}

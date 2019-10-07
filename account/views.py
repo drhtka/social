@@ -14,49 +14,71 @@ from account.forms import UserEditForm, ProfileEditForm
 from account.models import Profile, Contact
 from my_decorators.decorator_ajax import ajax_required
 from django.views.decorators.http import require_POST
+from activities.utils import create_action
+from activities.models import Action
+
 
 def user_login(request):
-    if request.method == 'POST': #  не будет виден в строке браузера
+    if request.method == 'POST':  # не будет виден в строке браузера
         form = LoginForm(request.POST)  # request.POST создст штмл форму из Django создаст как мы прописали в forms
-        if form.is_valid(): #  проверка правильно заполнен пароль
+        if form.is_valid():  # проверка правильно заполнен пароль
             cd = form.cleaned_data  # метод cleaned_data создаем формы и проверяем
-            user = authenticate(username=cd['username'], password=cd['password'])  # это словарь ключем является поле из forms
+            user = authenticate(
+                                username=cd['username'],
+                                password=cd['password'])  # это словарь ключем является поле из forms
 
-            if user is not None: # говоря проще если пользователь существует
+            if user is not None:  # говоря проще если пользователь существует
                 if user.is_active:
                     login(request, user)
-                    return redirect ('dashboard') # перенаправить в кабинет
-                    #return redirect('/') # вернуть на главную
+                    return redirect('dashboard')  # перенаправить в кабинет
+                    # return redirect('/') # вернуть на главную
 
-                else: # если пароль и имя не подошли
+                else:  # если пароль и имя не подошли
                     return HttpResponse('Disabled account')
 
-            else: # если вообще все пошло не так
+            else:  # если вообще все пошло не так
                 return HttpResponse('Invalid login and password')
     else:
         form = LoginForm()
-    return render(request, "account/login.html", {'form': form, 'username': auth.get_user(request).username}) #  будет отображать вошел пользователь или не вошел
+    return render(request, "account/login.html", {'form': form, 'username': auth.get_user(
+        request).username})  # будет отображать вошел пользователь или не вошел
+
 
 def user_logout(request):
-    auth.logout(request)# используем библиотеку auth
-    return redirect('/')# куда нас вернуть после того как мы вышли, на главную
+    auth.logout(request)  # используем библиотеку auth
+    return redirect('/')  # куда нас вернуть после того как мы вышли, на главную
 
-@login_required#чтобы могли входить только авторизовааннрые пользователи
+
+@login_required  # чтобы могли входить только авторизовааннрые пользователи
 def dashboard(request):
     context = RequestContext(request)
     to = User.objects.get(username=request.user)
     try:
         profile = Profile.objects.get(user=to)
     except ObjectDoesNotExist:
-        profile=None
-    return render(request, "account/dashboard.html", {'username': auth.get_user(request).username, #  будет отображать вошел пользователь или не вошел
-                                                      'to':to,
-                                                      'profile':profile,
-                                                      'user':request.user.get_full_name,
-                                                      'last_name':request.user.last_name,
-                                                      'first_name':request.user.first_name,
-                                                      'ip_address':request.META['REMOTE_ADDR']
-                                                      })
+        profile = None
+    return render(request, "account/dashboard.html",
+                  {'username': auth.get_user(request).username,  # будет отображать вошел пользователь или не вошел
+                   'to': to,
+                   'profile': profile,
+                   'user': request.user.get_full_name,
+                   'last_name': request.user.last_name,
+                   'first_name': request.user.first_name,
+                   'ip_address': request.META['REMOTE_ADDR']
+                   })
+
+@login_required
+def dashboard_tape(request):
+    actions = Action.objects.exclude(user=request.user)
+    following_ids = request.user.following.values_list('id', flat=True)
+
+    if following_ids:
+        actions = actions.filter(user_id__in=following_ids).select_related('user', 'user__profile').prefetch_related('target')
+    actions = actions[:100]
+    return render(request,
+                  'account/tupe.html',
+                  {'section': 'dashboard',
+                   'actions': actions})
 
 @login_required
 def edit_profile(request):
@@ -74,22 +96,24 @@ def edit_profile(request):
             messages.success(request, 'Профиль успешно обновлен!.')
             return redirect('dashboard')
         else:
-            messages.error(request,'Ой! Ошибка при обновлении профиля. Попробуйте снова.')
+            messages.error(request, 'Ой! Ошибка при обновлении профиля. Попробуйте снова.')
 
     else:
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
 
     return render(request,
-        "account/edit.html",
-        {'user_form':user_form,
-         'profile_form':profile_form}
-    )
+                  "account/edit.html",
+                  {'user_form': user_form,
+                   'profile_form': profile_form}
+                  )
+
 
 @login_required
 def user_list(request):
     users = User.objects.filter(is_active=True)
     return render(request, 'account/user/users_list.html', {'users': users})
+
 
 @login_required
 def user_detail(request, username):
@@ -97,7 +121,6 @@ def user_detail(request, username):
                              is_active=True)
     return render(request, 'account/user/detail_user.html',
                   {'user': user})
-
 
 
 @ajax_required
@@ -111,11 +134,12 @@ def user_follow(request):
             user = User.objects.get(id=user_id)
             if action == 'follow':
                 Contact.objects.get_or_create(user_from=request.user, user_to=user)
+                create_action(request, 'is following', user)
 
             else:
                 Contact.objects.filter(user_from=request.user, user_to=user).delete()
 
-                return JsonResponse({'status': 'ok'})
+            return JsonResponse({'status': 'ok'})
         except User.DoesNotExist:
-            return JsonResponse({'status':'ko'})
+            return JsonResponse({'status': 'ko'})
     return JsonResponse({'status': 'ko'})

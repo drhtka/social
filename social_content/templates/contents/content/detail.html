@@ -97,4 +97,38 @@ like{{ total_likes|pluralize }}
 
 {% block ajax_and_jquery %}
 <!--Функция JQuery -->
+    // используем селектор JQuery ('a.like'), что бы найти все <a> элементы
+// Используем click совершать действие, каждый раз, когда пользователь нажимает
+$('a.like').click(function(e){
+// используем e.preventDefault(); что бы не срабатывало везде где есть <a>
+e.preventDefault();
+// используем $.post что бы послать асинхронный запрос на сервер
+// испольбзуем url что бы создать url Ajax
+$.post('{% url "images:like" %}',
+//используем наш словарь с views параметров id и action, что и ожидает наше представление.
+{
+// получаем значения
+id: $(this).data('id'),
+action: $(this).data('action')
+},
+function(data){
+// ответ из нашего представления
+if (data['status'] == 'ok')
+{
+//когда данные http получены далее мы укажем что делать
+// и здесь же заканчиваем проверку статуса, равен ли он ok
+//если равен, то делаем дальше
+//функция обратного вызова
+var previous_action = $('a.like').data('action');
+// Если статус = ok, то Переключать действия
+$('a.like').data('action', previous_action == 'like' ? 'unlike' : 'like');
+// переключать тектовые ссылки, позволяет пользователю так же отменить дейтсиве
+$('a.like').text(previous_action == 'like' ? 'Unlike' : 'Like');
+// обновление лайков, увеличиваем или уменьшаем количество просмотров.
+var previous_likes = parseInt($('span.count .total').text());
+$('span.count .total').text(previous_action == 'like' ? previous_likes + 1 : previous_likes - 1);
+}
+});
+});
+        <!--Функция JQuery -->
 {% endblock %}
